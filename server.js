@@ -39,6 +39,10 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/project', (req, res) => {
+    res.render('project');
+});
+
 app.get('/about', (req, res) => {
     res.render('about', {
         pageTitle: 'About Page',
